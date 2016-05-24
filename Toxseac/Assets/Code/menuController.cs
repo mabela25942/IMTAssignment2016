@@ -18,13 +18,13 @@ public class menuController : MonoBehaviour
 
 		if (GUI.Button (new Rect (Screen.width / 2 - 100f, Screen.height / 2 + 60f, 200f, 50f), "HELP")) {
 
-			Application.LoadLevel ("help");
+			Application.LoadLevel (1);
 		}
 		
 
 		if (GUI.Button (new Rect (Screen.width / 2 - 100f, Screen.height / 2 + 30f, 200f, 50f), "PLAY")) {
 
-			Application.LoadLevel ("main");
+			Application.LoadLevel (2);
 		}
 
 
