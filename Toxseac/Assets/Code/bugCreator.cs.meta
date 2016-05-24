@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c0132ef3eff5cf5408f7a314af8edc01
+timeCreated: 1434215583
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - papercrumble: {fileID: 188088, guid: d9d5378c1346fc04bbcca4b44ac012dc, type: 2}
+  - metalcan: {fileID: 135208, guid: 7b354607cbb3d564d8a42c6228b097c8, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 85af1985f54169b4bbef9e19de64e7ba
+timeCreated: 1434219563
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - gcoin: {fileID: 134144, guid: ee587d6a4f3ef7b4d867cbeca75e2709, type: 2}
+  - heart: {fileID: 173906, guid: 0f597b0a37090c949b1822a0ac6bf82e, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
