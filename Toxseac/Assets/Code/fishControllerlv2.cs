@@ -11,11 +11,13 @@ public class fishControllerlv2 : MonoBehaviour
 	public AudioClip laserSound;
 	public static int score;
 	public static int lives;
+	public static int ammo;
 
 	void Start ()
 	{
 		lives = 6;
 		score = 0;
+		ammo = 20;
 	}
 	
 	void OnGUI ()
@@ -24,9 +26,11 @@ public class fishControllerlv2 : MonoBehaviour
 
 		string ScoreLabel = "Score: ";
 		string LivesLabel = "Lives: ";
+		string AmmoLabel = "Ammo: ";
 			
 		GUI.Label (new Rect (10f, 10f, 80, 20), ScoreLabel + score);
 		GUI.Label (new Rect (Screen.width - 80f, 10f, 80, 20), LivesLabel + lives);
+		GUI.Label (new Rect (10f, 880f, 80, 20), AmmoLabel + ammo);
 
 		if (GUI.Button (new Rect (Screen.width / 2 - 300f, 25f, 700f, 25f), "QUIT")) {
 			if (PlayerPrefs.GetInt ("score") < score) {
@@ -48,6 +52,9 @@ public class fishControllerlv2 : MonoBehaviour
 
 			Instantiate (laser, new Vector3 (transform.position.x, transform.position.y, 4.1f), Quaternion.Euler (new Vector3 (0, 0, 90))); 
 
+			ammo--;
+
+
 		}	
 			
 
@@ -58,7 +65,7 @@ public class fishControllerlv2 : MonoBehaviour
 			}
 
 
-			Application.LoadLevel (0);
+			Application.LoadLevel (6);
 						
 
 			score = 0;
@@ -108,6 +115,10 @@ public class fishControllerlv2 : MonoBehaviour
 		if (otherObject.tag == "gcoinlvhard") {
 
 			score++;
+			Destroy (otherObject.gameObject);
+		}
+		if (otherObject.tag == "ammo") {
+			ammo++;
 			Destroy (otherObject.gameObject);
 		}
 	}

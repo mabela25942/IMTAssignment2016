@@ -84,10 +84,7 @@ public class fishController : MonoBehaviour
 			Application.LoadLevel (3);
 		}
 
-		if (lives <= 0) {
-			Application.LoadLevel (6);
-		}
-		if (ammo <= 0) {
+		if (lives == 0) {
 			Application.LoadLevel (6);
 		}
 
