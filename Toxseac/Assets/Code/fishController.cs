@@ -80,7 +80,7 @@ public class fishController : MonoBehaviour
 			Application.LoadLevel (0);
 		}
 
-		if (score == 5) {
+		if (score == 10) {
 			Application.LoadLevel (3);
 		}
 
