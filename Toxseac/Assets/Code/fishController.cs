@@ -42,7 +42,7 @@ public class fishController : MonoBehaviour
 			if (PlayerPrefs.GetInt ("score") < score) {
 				PlayerPrefs.SetInt ("score", score);
 			}
-			//Application.LoadLevel (0);
+			Application.LoadLevel (0);
 		}
 	}
 
